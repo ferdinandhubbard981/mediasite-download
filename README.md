@@ -14,13 +14,13 @@ To set up the project, follow these steps:
 1. Clone the repository to your local machine:
 
 ```sh
-git clone <repository_url>
+git clone https://github.com/ferdinandhubbard981/mediasite-download.git
 ```
 
 2. Navigate to the cloned repository:
 
 ```sh
-cd <repository_name>
+cd mediasite-download
 ```
 
 3. Run the `setup.sh` script:
