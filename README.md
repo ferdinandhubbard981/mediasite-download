@@ -1,4 +1,4 @@
-# Project Name
+# mediasite-dl
 
 ## Prerequisites
 
