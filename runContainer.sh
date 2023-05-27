@@ -2,16 +2,15 @@
 
 # Define a function to display the usage of the script
 function usage {
-  echo "Usage: $0 --audio_url [audio_url] --video_url [video_url] --output_file [output_file]"
-  echo "Runs a Docker container to download audio and video from provided m3u8 links and merge them into a single mp4 file"
+  echo "Usage: mediasite-dl -v [video_url] -a [audio_url] -o [output_file_name.mp4]"
 }
 
 # Parse the command-line arguments
 while [[ "$#" -gt 0 ]]; do
     case $1 in
-        --audio_url) audio_url="$2"; shift ;;
-        --video_url) video_url="$2"; shift ;;
-        --output_file) output_file="$2"; shift ;;
+        -v) video_url="$2"; shift ;;
+        -a) audio_url="$2"; shift ;;
+        -o) output_file="$2"; shift ;;
         *) echo "Unknown parameter passed: $1"; usage; exit 1 ;;
     esac
     shift
