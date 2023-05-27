@@ -33,7 +33,7 @@ If the setup was successful, you should see a message stating that a symlink has
 
 ## How to Run
 
-To run the project, use the created symlink as follows:
+To download a video, run the following command from any directory:
 
 ```sh
 mediasite-dl -v "video_url" -a "audio_url" -o "output_file_name.mp4"
