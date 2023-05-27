@@ -23,4 +23,4 @@ if [ -z "$audio_url" ] || [ -z "$video_url" ] || [ -z "$output_file" ]; then
 fi
 
 # Execute the Docker command
-docker run -v $(pwd):/app/content mediasite-dl $audio_url $video_url "content/${output_file}"
+docker run -v $(pwd):/app/content --rm mediasite-dl $audio_url $video_url "content/${output_file}"

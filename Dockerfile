@@ -2,7 +2,7 @@
 FROM jrottenberg/ffmpeg
 
 # Set the working directory
-WORKDIR /usr/src/app
+WORKDIR /app
 
 # Copy the script to the docker container
 COPY src/download-script.sh .
@@ -11,4 +11,4 @@ COPY src/download-script.sh .
 RUN chmod +x download-script.sh
 
 # Run the script
-ENTRYPOINT ["/usr/src/app/download-script.sh"]
+ENTRYPOINT ["/app/download-script.sh"]

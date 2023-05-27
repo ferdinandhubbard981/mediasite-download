@@ -36,7 +36,7 @@ If the setup was successful, you should see a message stating that a symlink has
 To run the project, use the created symlink as follows:
 
 ```sh
-mediasite-dl -v [video_url] -a [audio_url] -o [output_file_name.mp4]
+mediasite-dl -v "video_url" -a "audio_url" -o "output_file_name.mp4"
 ```
 
 ## Getting Video and Audio URLs
