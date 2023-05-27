@@ -22,8 +22,12 @@ git clone https://github.com/ferdinandhubbard981/mediasite-download.git
 ```sh
 cd mediasite-download
 ```
+3. Add permissions:
 
-3. Run the `setup.sh` script:
+```sh
+chmod +x setup.sh
+```
+4. Run the `setup.sh` script:
 
 ```sh
 ./setup.sh
